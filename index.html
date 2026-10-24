@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WildGuard | Wildlife Conservation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="top-marquee">
+      <marquee scrollamount="4">
+        WILDGUARD | Protect Wildlife | Restore Habitats | Respect Nature | Every
+        Species Matters
+      </marquee>
+    </div>
+    <header>
+      <p class="eyebrow">WILDLIFE • NATURE • FUTURE</p>
+      <h1>WildGuard</h1>
+      <p>Protect the Wild. Preserve Our Future.</p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Our Mission</a></li>
+        <li><a href="#wildlife">Wildlife</a></li>
+        <li><a href="#conservation">Our Goals</a></li>
+        <li><a href="#action">Take Action</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" id="home">
+      <p class="eyebrow">A VOICE FOR THE VOICELESS</p>
+      <h2>Protect the Wild.<br />Preserve Our Future.</h2>
+      <p class="hero-description">
+        Every living species plays a role in our planet’s ecosystem. Together,
+        we can protect endangered animals, preserve their habitats, and create a
+        future where wildlife thrives.
+      </p>
+      <img src="wildlife.jpg" alt="Wild animals in their natural habitat" />
+      <button onclick="showConservationTip()">Discover How to Help</button>
+      <p id="tipMessage" class="message" aria-live="polite"></p>
+    </section>
+
+    <section class="about" id="about">
+      <p class="eyebrow">WHY IT MATTERS</p>
+      <h2>Nature Needs Our Protection</h2>
+      <p>
+        Wildlife conservation protects animals, plants, and the environments
+        they depend on. Habitat destruction, pollution, climate change, and
+        illegal hunting threaten biodiversity. Responsible choices and
+        collective action can help protect our natural world for generations to
+        come.
+      </p>
+    </section>
+
+    <div class="container">
+      <aside class="sidebar">
+        <p class="eyebrow">START TODAY</p>
+        <h3>Small Steps, Lasting Impact</h3>
+        <ul>
+          <li>Plant Native Trees</li>
+          <li>Reduce Plastic Waste</li>
+          <li>Protect Natural Habitats</li>
+          <li>Conserve Water</li>
+          <li>Support Conservation</li>
+        </ul>
+        <p class="sidebar-note">
+          A healthier planet begins with the choices we make every day.
+        </p>
+      </aside>
+      <main class="content" id="wildlife">
+        <p class="eyebrow">OUR NATURAL HERITAGE</p>
+        <h2>Give Wildlife a Future</h2>
+        <p>
+          Discover how protecting species and ecosystems helps maintain the
+          balance of nature.
+        </p>
+        <div class="cards">
+          <div class="card">
+            <img src="img2.jpg" alt="Tiger in its natural habitat" />
+            <p class="card-number">01 / SPECIES</p>
+            <h3>Protect Wildlife</h3>
+            <p>
+              Help prevent poaching and support efforts that protect threatened
+              and endangered animals.
+            </p>
+            <button onclick="showWildlifeInfo('animals')">Learn More</button>
+          </div>
+          <div class="card">
+            <img src="img3.jpg" alt="Elephant in a forest" />
+            <p class="card-number">02 / HABITATS</p>
+            <h3>Restore Habitats</h3>
+            <p>
+              Preserve forests, wetlands, and grasslands where wildlife finds
+              food, water, and shelter.
+            </p>
+            <button onclick="showWildlifeInfo('habitats')">Learn More</button>
+          </div>
+          <div class="card">
+            <img src="img4.jpg" alt="Bird in its natural environment" />
+            <p class="card-number">03 / BIODIVERSITY</p>
+            <h3>Preserve Biodiversity</h3>
+            <p>
+              Protect different species and maintain the ecological balance that
+              sustains our planet.
+            </p>
+            <button onclick="showWildlifeInfo('biodiversity')">
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div id="wildlifeInfo" class="info-box" aria-live="polite"></div>
+      </main>
+    </div>
+
+    <section class="conservation" id="conservation">
+      <p class="eyebrow">OUR COMMITMENT</p>
+      <h2>A Future Worth Protecting</h2>
+      <div class="benefits">
+        <div class="benefit">
+          <h3>01</h3>
+          <p>Safeguard Endangered Species</p>
+        </div>
+        <div class="benefit">
+          <h3>02</h3>
+          <p>Restore Natural Habitats</p>
+        </div>
+        <div class="benefit">
+          <h3>03</h3>
+          <p>Maintain Ecosystem Balance</p>
+        </div>
+        <div class="benefit">
+          <h3>04</h3>
+          <p>Promote Environmental Awareness</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="action" id="action">
+      <p class="eyebrow">MAKE A DIFFERENCE</p>
+      <h2>Protect Wildlife in Your Community</h2>
+      <p class="action-description">
+        Conservation begins with informed choices. Learn how to respond
+        responsibly to wildlife emergencies, protect habitats, and inspire
+        people around you.
+      </p>
+      <div class="action-cards">
+        <div class="risk-card">
+          <img src="img5.jpg" alt="Wildlife in its natural environment" />
+          <div class="risk-content">
+            <span class="risk-label">RESCUE &amp; REHABILITATION</span>
+            <h3>Give Wildlife a Second Chance</h3>
+            <p>
+              Injured and displaced wild animals need safe habitats and
+              professional care. Contact authorized wildlife rescuers when an
+              animal needs help.
+            </p>
+            <button onclick="showRiskInfo('rescue')">Learn About Rescue</button>
+          </div>
+        </div>
+        <div class="risk-card">
+          <img src="img6.jpg" alt="Elephant in a protected habitat" />
+          <div class="risk-content">
+            <span class="risk-label">HABITAT PROTECTION</span>
+            <h3>Keep Wild Spaces Alive</h3>
+            <p>
+              Forests, rivers, and grasslands are essential for wildlife
+              survival. Protect natural spaces and help prevent habitat
+              destruction.
+            </p>
+            <button onclick="showRiskInfo('habitat')">Explore Solutions</button>
+          </div>
+        </div>
+        <div class="risk-card">
+          <img src="img7.jpg" alt="Bird in a natural habitat" />
+          <div class="risk-content">
+            <span class="risk-label">COMMUNITY AWARENESS</span>
+            <h3>Become a Wildlife Guardian</h3>
+            <p>
+              Share reliable conservation information, reduce waste, and
+              encourage your community to respect wildlife and the environment.
+            </p>
+            <button onclick="showRiskInfo('community')">
+              Discover Your Role
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="riskInfo" class="info-box" aria-live="polite"></div>
+    </section>
+
+    <footer>
+      <h3>WildGuard</h3>
+      <p>Protect Nature. Respect Wildlife. Sustain Life.</p>
+      <p class="footer-small">Every species matters. Every habitat counts.</p>
+      <p class="copyright">&copy; 2026 WildGuard Wildlife Conservation</p>
+    </footer>
+  </body>
+</html>
